@@ -1,0 +1,130 @@
+
+select {
+    border: none;
+    outline: none;
+    margin: 50px 0px 0px 60px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Hind Madurai";
+}
+
+.filter-1 select,
+.filter-4 select {
+    width: 90px;
+}
+
+.filter-2 select,
+.filter-3 select {
+    width: 70px;
+}
+
+.jacket-list {
+    display: grid;
+    grid-template-columns: 140px 140px;
+    grid-template-rows: 240px 240px 260px;
+    grid-gap: 0px;
+    margin: 20px 20px 20px 20px;
+    font-size: 0.7rem;
+    justify-content: space-evenly;
+}
+
+.jackets img,
+.product_image {
+    width: 90px;
+    height: auto;
+    grid-column: -1/1;
+    align-items: center;
+    background-color: #F4F3F3;
+    margin: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border-radius: 8px;
+}
+
+.jackets p {
+    grid-column: 1;
+    font-size: 1.4em;
+    margin: 0px 10px;
+}
+
+.jackets h2 {
+    margin-bottom: 0px;
+    margin: 0px 10px;
+}
+
+.jacket-list a {
+text-decoration: none;
+color: #000;
+}
+
+.filter-1, .filter-2, .filter-3, .filter-4 {
+    display: none;
+}
+
+
+
+
+/* Media */
+
+@media (min-width: 600px) {
+
+.content {
+    display: grid;
+    margin: 60px;
+    grid-gap: 1em;
+    grid-template-rows: auto;
+    max-width: 500px;
+}
+
+.filter-1, .filter-2, .filter-3, .filter-4 {
+    display: inline-block;
+}
+
+.filter-5 {
+    display: none;
+}
+
+.jackets img,
+.product_image {
+    width: 150px;
+}
+
+.jacket-list {
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 300px 300px 300px;
+    margin: 20px 20px 0px 20px;
+    justify-content: space-evenly;
+    font: 0.7rem;
+}
+
+
+}
+    
+@media (min-width: 800px) {
+
+
+.jacket-list {
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: 450px 450px 450px 450px;
+    grid-gap: 20px;
+    justify-content: start;
+    font-size: 1rem;
+    margin-top: 20px 60px;
+}
+
+.jackets img,
+.product_image {
+    width: 300px;
+}
+
+
+.filter-5 {
+    display: none;
+}
+
+.filter-1, .filter-2, .filter-3, .filter-4 {
+    display: inline-block;
+}
+
+}
